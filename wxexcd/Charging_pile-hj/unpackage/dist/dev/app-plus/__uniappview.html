@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8" />
+        <script>
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+                CSS.supports('top: constant(a)'))
+            document.write(
+                '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+                (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+        </script>
+        <title>View</title>
+        <style>
+            * {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            input[type="search"]::-webkit-search-cancel-button {
+                display: none;
+            }
+        </style>
+        <script>
+            var __wxConfig = {"debug":false,"appname":"Charging_pile","entryPagePath":"pages/index/index.html","page":{"pages/index/index.html":{"window":{"navigationBarTitleText":"e享一站","navigationBarBackgroundColor":"#56CC7F","navigationBarTextStyle":"white","usingComponents":{"swiper-dot":"/pages/swiperDot/swiperDot"}}},"pages/version/version.html":{"window":{"navigationBarTitleText":"e享一站","usingComponents":{}}},"pages/recharge/recharge.html":{"window":{"navigationBarTitleText":"e享一站","navigationBarBackgroundColor":"#F3F3F3","usingComponents":{}}},"pages/power/power.html":{"window":{"navigationBarTitleText":"e享一站","navigationBarBackgroundColor":"#56CC7F","navigationBarTextStyle":"white","usingComponents":{}}},"pages/charging/charging.html":{"window":{"navigationBarTitleText":"充电中","usingComponents":{}}},"pages/powerDetail/powerDetail.html":{"window":{"navigationBarTitleText":"e享一站","usingComponents":{"swiper-dot":"/pages/swiperDot/swiperDot2"}}},"pages/selectDetail/selectDetail.html":{"window":{"navigationBarTitleText":"e享一站","usingComponents":{}}},"pages/aboutUs/aboutUs.html":{"window":{"navigationBarTitleText":"e享一站","usingComponents":{}}},"pages/mine/mine.html":{"window":{"navigationBarTitleText":"e享一站","navigationBarBackgroundColor":"#56CC7F","navigationBarTextStyle":"white","usingComponents":{}}},"pages/login/login.html":{"window":{"navigationBarTitleText":"","navigationBarBackgroundColor":"#56CA7E","navigationBarTextStyle":"white","usingComponents":{}}},"pages/forget/forget.html":{"window":{"navigationBarTitleText":"","navigationBarBackgroundColor":"#56CA7E","navigationBarTextStyle":"white","usingComponents":{}}},"pages/notLogin/notLogin.html":{"window":{"navigationBarTitleText":"e享一站","navigationBarBackgroundColor":"#F3F3F3","usingComponents":{}}},"pages/navi/navi.html":{"window":{"navigationBarTitleText":"e享一站","usingComponents":{}}},"pages/myWalletDetail/myWalletDetail.html":{"window":{"navigationBarTitleText":"账户明细","navigationBarBackgroundColor":"#FFFFFF","usingComponents":{}}},"pages/myWallet/myWallet.html":{"window":{"navigationBarTitleText":"e享一站","navigationBarBackgroundColor":"#F3F3F3","usingComponents":{}}}},"global":{"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"e享一站","navigationBarBackgroundColor":"#ffffff","backgroundColor":"#FFFFFF"}},"tabBar":{"color":"","selectedColor":"","backgroundColor":"","borderStyle":"black","list":[],"position":"bottom"},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/index/index","pages/version/version","pages/recharge/recharge","pages/power/power","pages/charging/charging","pages/powerDetail/powerDetail","pages/selectDetail/selectDetail","pages/aboutUs/aboutUs","pages/mine/mine","pages/login/login","pages/forget/forget","pages/notLogin/notLogin","pages/navi/navi","pages/myWalletDetail/myWalletDetail","pages/myWallet/myWallet"],"nvueCompiler":"uni-app","renderer":"auto","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"compilerVersion":"2.5.1","usingComponents":{}}
+        </script>
+        <script>
+            var __id__ = '';
+            window.__dispatchGenerateFunc__ = function(page) {
+                __id__ = page;
+                document.title = page;
+                // window.history.pushState('', '', page);
+                var wxss = page.replace('.html', '.wxss')
+                if (
+                    typeof __wxAppCode__ !== 'undefined' &&
+                    __wxAppCode__.hasOwnProperty(wxss)
+                ) {
+                    var setCssToHead = __wxAppCode__[wxss]
+                    typeof setCssToHead === 'function' && setCssToHead()
+                    document.dispatchEvent(new CustomEvent("generateFuncReady", {
+                        detail: {
+                            generateFunc: $gwx(page.replace('.html', '.wxml'))
+                        }
+                    }));
+                } else {
+                    plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+                }
+            };
+        </script>
+        <script src="__uniappes6.js"></script>
+        <script src="uniapp://ready"></script>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+
+</html>

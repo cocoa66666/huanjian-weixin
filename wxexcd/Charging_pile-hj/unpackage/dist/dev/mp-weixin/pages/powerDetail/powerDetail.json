@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "e享充电",
+  "usingComponents": {
+    "swiper-dot": "/pages/swiperDot/swiperDot2"
+  }
+}

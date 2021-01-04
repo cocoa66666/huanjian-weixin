@@ -1,0 +1,1 @@
+<view class="dot-main"><block a:for="{{list}}" a:for-item="item" a:for-index="index" a:key="index"><view class="{{(('dot-item')+' '+(current==index?'active':''))}}"></view></block></view>

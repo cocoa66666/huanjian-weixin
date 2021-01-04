@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "e享一站",
+  "titleBarColor": "#56CC7F",
+  "usingComponents": {
+    "swiper-dot": "/pages/swiperDot/swiperDot"
+  }
+}

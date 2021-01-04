@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/version/version",
+    "pages/recharge/recharge",
+    "pages/power/power",
+    "pages/charging/charging",
+    "pages/powerDetail/powerDetail",
+    "pages/selectDetail/selectDetail",
+    "pages/aboutUs/aboutUs",
+    "pages/mine/mine",
+    "pages/login/login",
+    "pages/forget/forget",
+    "pages/notLogin/notLogin",
+    "pages/navi/navi",
+    "pages/myWalletDetail/myWalletDetail",
+    "pages/myWallet/myWallet"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "e享充电",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#FFFFFF"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置将用于地图展示"
+    }
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wxd5b706797f401a0d"
+  ],
+  "usingComponents": {}
+}
